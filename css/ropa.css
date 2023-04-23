@@ -1,0 +1,410 @@
+/*------------------------------------ESTILOS GENERALES-------------------------------*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+ul{
+    list-style: none;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+h2 {
+    color: #78866b;
+}
+
+
+
+/*----------------------------------------HEADER------------------------------------------*/
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+}
+.nombre-estilo{
+    text-decoration: none;
+    list-style: none;
+}
+
+.nombre-estilo:focus{
+    background-color: #000;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo h1{
+    color: #fff;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.logo h1:hover{
+    color: #fff;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+    margin: 0 10px 0 60px;
+}
+
+.menu {
+    display: flex;
+    margin-right: 50px;
+}
+
+.menu li{
+    margin: 20px;
+}
+
+.menu li a{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-family: 'Heebo', sans-serif;
+}
+
+.menu li a:hover {
+    padding: 5px 10px;
+    background-color: #78866b;
+    color: #fff;
+}
+
+/*--------------------------------------Seccion Remeras---------------------------*/
+
+#remeras{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+}
+
+.remeras-encabezado {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.remeras-encabezado p{
+    font-size: 3.5em;
+    color: #333;
+    margin: 50px 1em 0 0;
+}
+
+.remeras-contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+
+
+/*-----------------------------------Seccion Pantalones -----------------------------*/
+
+#pantalones{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+}
+
+
+.pantalones-encabezado {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.pantalones-encabezado p{
+    font-size: 3.5em;
+    color: #333;
+    margin: 50px 1em 0 0;
+}
+
+.pantalones-contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+
+
+/*--------------------------------Section Zapatillas-----------------------------*/
+
+#zapatillas{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.zapatillas-encabezado {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.zapatillas-encabezado p{
+    font-size: 3.5em;
+    color: #333;
+    margin: 50px 1em 0 0;
+}
+
+.zapatillas-contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+/*---------------------------------------------ESTILOS GENERALES----------------------------------------*/
+
+.imagen {
+    width: 270px;
+    height: 480px;
+}
+
+.precio-producto {
+    font-size: 1em;
+}
+
+/*----------------------------------------------------CONTACTO-------------------------------------------*/
+#contacto{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: baseline;
+}
+.div-redes-contacto{
+    display: flex;
+    flex-direction: column;
+}
+
+.div-redes-contacto ul li a{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+    padding: 10px 0px;
+}
+.creditos-contacto{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.creditos-contacto strong{
+    margin-top: .5em;
+}
+
+
+.div-contacto-1{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    background-color: #ccc;
+    padding: 100px;
+    align-items: center;
+}
+
+.contacto-encabezado{
+    font-size: 2em;
+    font-weight: bolder;
+    padding: 10px;
+    margin: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"]{
+    width: 500px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+input[type="text"]:hover,:focus,
+input[type="email"]:hover,:focus,
+textarea:hover,:focus{
+    background-color: #ddd;
+}
+
+button[type="submit"] {
+    font-size: 16px;
+    background-color: #78866b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.boton-enviar-mensaje {
+    border: 0;
+    cursor: pointer;
+    background-color: #444;
+    color: #fff;
+    font-size: 17px;
+    padding: 5px;
+    font-weight: 400;
+}
+
+.boton-enviar-mensaje:hover {
+    background-color: #78866b;
+    color: #fff;
+    border: 0;
+    padding: .5em;
+    transition: .3s;
+}
+
+.dejanos-tu-mensaje{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.div-mensaje-a-enviar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.contenedor-redes a p {
+    margin-left: .3em;
+}
+
+/*-------------------------------------------Footer----------------------------*/
+
+
+.footer-contenedor{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 50px;
+    background-color: #ccc;
+}
+.logo-footer{
+    height: 70px;
+    width: 70px;
+}
+
+.contacto-personal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 33%;
+}
+
+.contacto-personal div p{
+    font-size: 15px;
+}
+
+.contacto-personal div a{
+    text-decoration: none;
+    color: #000;
+}
+
+.contenedor-redes {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor-redes p{
+    font-family: 'Heebo', sans-serif;
+}
+
+.redes-personales a i{
+    margin: 5px;
+}
+
+/*-------------------------------------------GENERAL----------------------------*/
+
+.producto-agregar {
+    border: 0;
+    cursor: pointer;
+    background-color: #444;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.producto-agregar:hover{
+    background-color: #78866b;
+    font-weight: bolder;
+}
+
+.producto-agregar:active,
+.producto-agregar-2:active,
+.producto-agregar-3:active{
+    background-color: #78866b;
+    font-size: 16px;
+    transition: .1s;
+}
+.bi-instagram {
+    font-size: 20px;
+    color: rgb(211 42 167);
+}
+
+.bi-envelope-open{
+    font-size: 20px;
+    color:#ff0c0c;
+}
+
+.bi-facebook,
+.bi-linkedin {
+    font-size: 20px;
+    color: #196ac7;
+}
